@@ -7,10 +7,29 @@
 (setq! org-plantuml-jar-path "/Applications/plantuml.jar")
 
 ;; Python
-(setq! org-babel-python-command "/opt/anaconda3/bin/python3")
-(setq! python-shell-interpreter "/opt/anaconda3/bin/python3")
-(setq! python-shell-completion-native-enable nil)
-(setq! python-indent-guess-indent-offset-verbose nil)
+;; Python paths
+;; /opt/homebrew/bin/python3
+;; /usr/local/bin/python3
+;; /usr/bin/python3
+;; /opt/anaconda3/bin/python3
+
+;;(setq! org-babel-python-command "/opt/homebrew/bin/python3")
+;;(setq! python-shell-interpreter "/opt/homebrew/bin/python3")
+;;(setq! python-indent-guess-indent-offset-verbose nil)
+;;(setq! python-shell-completion-native-enable t)
+;;  (setq! python-shell-completion-native-turn-on t)
+;;(add-to-list 'python-shell-completion-native-disabled-interpreters "/opt/homebrew/bin/python3")
+
+;;(with-eval-after-load 'python
+;;  (defun python-shell-completion-native-try ()
+;;    "Return non-nil if can trigger native completion."
+;;    (let ((python-shell-completion-native-enable t)
+;;          (python-shell-completion-native-output-timeout
+;;           python-shell-completion-native-try-output-timeout
+;;           python-shell-completion-native-disabled-interpreters nil))
+;;      (python-shell-completion-native-get-completions
+;;       (get-buffer-process (current-buffer))
+;;       nil "_"))))
 
 ;; R
 (setq! ess-eval-visibly-p nil)

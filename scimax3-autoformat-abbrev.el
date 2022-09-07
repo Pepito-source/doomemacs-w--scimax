@@ -173,28 +173,28 @@ abbreviation should be expanded at the current point."
 
 ;;*** Contractions
 
-(defcustom scimax-contraction-abbreviations
-  '(("arent" "are not")
-    ("cant" "can not")
-    ("couldnt" "could not")
-    ("didnt" "did not")
-    ("doesnt" "does not")
-    ("dont" "do not")
-    ("hadnt" "had not")
-    ("hasnt" "has not")
-    ("isnt" "is not")
-    ("shouldnt" "should not")
-    ("thats" "that is")
-    ("wasnt" "was not")
-    ("whos" "who is")
-    ("wont" "will not")
-    ("wouldve" "would have")
-    ("wouldnt" "would not"))
-  "List of (name expansion) to replace in abbrev-mode.
-We do not use contractions in technical writing so this replaces
-them with the full version."
-  :group 'scimax-autoformat
-  :type '(repeat (list string string)))
+;; (defcustom scimax-contraction-abbreviations
+;;   '(("arent" "are not")
+;;     ("cant" "can not")
+;;     ("couldnt" "could not")
+;;     ("didnt" "did not")
+;;     ("doesnt" "does not")
+;;     ;; ("dont" "do not")
+;;     ("hadnt" "had not")
+;;     ("hasnt" "has not")
+;;     ("isnt" "is not")
+;;     ("shouldnt" "should not")
+;;     ("thats" "that is")
+;;     ("wasnt" "was not")
+;;     ("whos" "who is")
+;;     ("wont" "will not")
+;;     ("wouldve" "would have")
+;;     ("wouldnt" "would not"))
+;;   "List of (name expansion) to replace in abbrev-mode.
+;; We do not use contractions in technical writing so this replaces
+;; them with the full version."
+;;   :group 'scimax-autoformat
+;;   :type '(repeat (list string string)))
 
 
 ;;*** transposed letter words
@@ -254,7 +254,7 @@ them with the full version."
 (defcustom scimax-abbreviations
   '(scimax-month-abbreviations
     scimax-weekday-abbreviations
-    scimax-contraction-abbreviations
+    ;; scimax-contraction-abbreviations
     scimax-transposition-abbreviations
     scimax-chemical-formula-abbreviations
     scimax-misc-abbreviations)

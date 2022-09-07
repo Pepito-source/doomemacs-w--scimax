@@ -32,18 +32,18 @@
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode))))
 
 
-(setq org-todo-keywords
-      '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "WAITING(w)" "CANCELLED(c)"  "PHONE" "MEETING" "|" "DONE(d)")))
+;;(setq org-todo-keywords
+;;      '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "WAITING(w)" "CANCELLED(c)"  "PHONE" "MEETING" "|" "DONE(d)")))
 
-(setq org-todo-keyword-faces
-      '(("TODO" :foreground "red" :weight bold)
-	("NEXT" :foreground "blue" :weight bold)
-	("DONE" :foreground "forest green" :weight bold)
-	("WAITING" :foreground "orange" :weight bold)
-	("CANCELLED" :foreground "magenta" :weight bold)
-	("STARTED" :foreground "forest green" :weight bold)
-	("MEETING" :foreground "blue" :weight bold)
-	("PHONE" :foreground "red" :weight bold)))
+;;(setq org-todo-keyword-faces
+;;      '(("TODO" :foreground "red" :weight bold)
+;;	("NEXT" :foreground "blue" :weight bold)
+;;	("DONE" :foreground "forest green" :weight bold)
+;;	("WAITING" :foreground "orange" :weight bold)
+;;	("CANCELLED" :foreground "magenta" :weight bold)
+;;	("STARTED" :foreground "forest green" :weight bold)
+;;	("MEETING" :foreground "blue" :weight bold)
+;;	("PHONE" :foreground "red" :weight bold)))
 
 
 ;; * Speed commands
